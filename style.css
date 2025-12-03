@@ -118,4 +118,8 @@ body {
 	font-size: small;
 }
 
+img{
+    width:100%;
+    aspect-ratio: 3/4;
+}
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
