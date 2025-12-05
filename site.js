@@ -62,6 +62,12 @@ const vue_app = Vue.createApp({
         "released"
       ).innerText = `${months[newMonth]} ${dateArray[2]}, ${dateArray[0]}`;
     },
+    addLikes: function (i) {
+      this.movies[i].likes += 1;
+    },
+    disLikes: function (i) {
+      this.movies[i].dislikes += 1;
+    },
   },
 });
 

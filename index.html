@@ -48,8 +48,10 @@
 						<p class="websites">Websites: <a> {{movie.imdb}} </a> | <a>{{movie.website}}</a></p>
 
 						<div class="social">
-							<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
-							<p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
+							<p class="likes" id="likes" @click="addLikes(i)"><i class="bi bi-hand-thumbs-up"
+									aria-hidden="true"></i>{{movie.likes}}</p>
+							<p class="dislikes" @click="disLikes(i)"><i class="bi bi-hand-thumbs-down"></i>
+								{{movie.dislikes}}</p>
 						</div>
 					</div>
 				</div>
