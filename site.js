@@ -57,7 +57,10 @@ const vue_app = Vue.createApp({
         "November",
         "December",
       ];
-      let newMonth = released[1] - 1`${months[newMonth]}`;
+      let newMonth = dateArray[1] - 1;
+      document.getElementsByClassName(
+        "released"
+      ).innerText = `${months[newMonth]} ${dateArray[2]}, ${dateArray[0]}`;
     },
   },
 });
