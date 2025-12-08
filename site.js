@@ -68,6 +68,18 @@ const vue_app = Vue.createApp({
     disLikes: function (i) {
       this.movies[i].dislikes += 1;
     },
+    posterClick: function (i) {
+      this.movies[i].posterindex += 1;
+      if (this.movies[i].posterindex >= this.movies[i].posters.length) {
+        this.movies[i].posterindex = 0;
+      }
+    },
+    timeText: function (minutes) {
+      let hours = Math.floor(minutes / 60);
+      let remainingMinutes = minutes % 60;
+      let hoursMinutes = `${hours}h ${remainingMinutes}m`;
+      return hoursMinutes;
+    },
   },
 });
 
